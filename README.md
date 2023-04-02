@@ -1,1 +1,3 @@
 # python_stuff
+
+Ideas I came across online or while I was daydreaming...
