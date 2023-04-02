@@ -2,7 +2,7 @@
 
 this is to check the connectivity of a website
 
-need to install _aiohttp_:
+need to install `aiohttp`:
 ```
 $ python -m pip install aiohttp
 ```
