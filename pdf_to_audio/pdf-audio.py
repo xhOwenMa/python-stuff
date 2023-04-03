@@ -1,4 +1,3 @@
-from winreg import HKEY_LOCAL_MACHINE
 import pyttsx3, PyPDF2
 
 pdfreader = PyPDF2.PdfReader(open('book.pdf', 'rb'))
