@@ -1,3 +1,3 @@
-# python_stuff
+# personal projects (Python)
 
 Ideas I came across online or while I was daydreaming...
