@@ -29,14 +29,14 @@ def is_prime2(n):
   if n % 3 == 0:
     return False
 
-  i = 5
+  d = 5
   w = 2
 
-  while i * i <= n:
-    if n % i == 0:
+  while d * d <= n:
+    if n % d == 0:
       return False
 
-    i += w
+    d += w
     w = 6 - w
 
   return True
