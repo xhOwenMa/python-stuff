@@ -15,7 +15,7 @@ def is_prime(n):
 
 def is_prime2(n):
   """
-  fact: besides 2 and 3, all primes have the form 6k+1 or 6k-1. So this algorithm only looks at numbers of this form
+  fact: besides 2 and 3, all primes have the form 6k+1 or 6k-1. So this algorithm only checks divisors of this form
   
   n : int
   return True if n is prime
