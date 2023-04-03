@@ -1,17 +1,18 @@
-import pyttsx3, PyPDF2
+import pyttsx3
+from pypdf import PdfReader
 
-pdfreader = PyPDF2.PdfReader(open('book.pdf', 'rb'))
+reader = PdfReader("book.pdf")
 speaker = pyttsx3.init()
 voices = speaker.getProperty('voices')
 speaker.setProperty('voice', voices[1].id) # set the voice to Zira - one of the Microsoft built-in voices
-# use voice.py to find the voice you like
+# use voice.py the find the voice you like
+text = ""
 
-for page_num in range(len(pdfreader.pages)):
-    text = pdfreader.pages[page_num].extract_text()
-    clean_text = text.strip().replace('\n', ' ')
-    print(clean_text)
+for page in reader.pages:
+    clean_text = page.extract_text().strip().replace('\n', ' ')
+    text += clean_text + "\n"
     
-speaker.save_to_file(clean_text, 'story.mp3')
+speaker.save_to_file(text, 'story.mp3')
 
 speaker.runAndWait()
 
