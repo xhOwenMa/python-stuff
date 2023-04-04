@@ -15,7 +15,7 @@ while True:
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     output.write(frame)
 
-    if cv2.waitKey(1) == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 output.release()

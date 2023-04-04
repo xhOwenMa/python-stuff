@@ -3,7 +3,7 @@
 import sys
 import pathlib
 
-from connectivity_checker.checker import site_is_online
+from checker import site_is_online
 from cli import read_user, display_result
 
 def main():
