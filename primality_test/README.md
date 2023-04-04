@@ -1,5 +1,5 @@
 # primality test
 
-a quick function - the simple $O(\sqrt{n})$ algorithm - I created for my number theory assignment; 
+a quick function - the simple $O(\sqrt{n})$ algorithm - I created for my number theory assignment;
 
-Also, refer to my other repo: [Miller-Rabin Primality Test](https://github.com/xhOwenMa/Miller-Rabin-Primality-Test) for an implementation of Miller-Rabin Primality Test
+Miller-Rabin Primality Test uses the Miller-Rabin algorithm, it is a probabilisitic test, and I also incorporated the feature to check if a number is a Miller-Rabin witness
