@@ -1,5 +1,3 @@
-# CSE442 Assignment4 EC
-# Owen Ma
 
 import random, math
 
