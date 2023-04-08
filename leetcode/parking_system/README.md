@@ -4,4 +4,5 @@
 
 ## thoughts
 
-add more features
+- finalize how to record time and which function records the time
+- add more features
