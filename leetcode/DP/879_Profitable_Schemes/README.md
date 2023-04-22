@@ -1,6 +1,6 @@
 # 879. Profitable Schemes
 
-04/20/2023 Daily Challenge. Dynamic Programming
+04/21/2023 Daily Challenge. Dynamic Programming
 
 ## Idea:
 
