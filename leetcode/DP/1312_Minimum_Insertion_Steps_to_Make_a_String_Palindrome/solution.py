@@ -1,7 +1,7 @@
 class Solution:
     def minInsertions(self, s: str) -> int:
         n = len(s)
-        # dp[i][j] stores the minimum insertion steps to make s[i:j] a palindrome
+        # dp[i][j] stores the minimum insertion steps to make s[i:j+1] a palindrome
         dp = [[0] * n for _ in range(n)]
             
         # Fill in the values for substrings of length 2 or greater
@@ -16,6 +16,6 @@ class Solution:
                     # we can either insert a character at i-th position or j-th position to make the substring a palindrome; taking the min to achieve our objective
                     dp[i][j] = 1 + min(dp[i+1][j], dp[i][j-1])
         
-        # dp[0][n-1] stores the minimum insertion steps to make s[0:n-1] a palindrome by definition; s[0:n-1] is referring to the whole string s
+        # dp[0][n-1] stores the minimum insertion steps to make s[0:n] a palindrome by definition; s[0:n] is referring to the whole string s
         return dp[0][n-1]
 
